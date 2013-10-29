@@ -174,6 +174,9 @@ class Mininet( object ):
                                   ipBaseNum=self.ipBaseNum,
                                   prefixLen=self.prefixLen ) +
                                   '/%s' % self.prefixLen }
+
+        print defaults
+        
         if self.autoSetMacs:
             defaults[ 'mac'] = macColonHex( self.nextIP )
         if self.autoPinCpus:
